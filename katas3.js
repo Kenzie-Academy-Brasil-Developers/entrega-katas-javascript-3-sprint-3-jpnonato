@@ -119,7 +119,7 @@ kata8()
 function kata9() {
     let y = []
     for (i=1; i <= 100; i++){
-        if(i %5 === 0){
+        if(i%5 === 0 && i%2 !== 0){
         y.push(i)
         }
     }
@@ -198,8 +198,8 @@ kata14()
 
 function kata15() {
     let y = 0
-    for (i = 0; i < 20; i++){
-        y += sampleArray[i]
+    for (i = 0; i <= 20; i++){
+        y += i
     }
     return showresults(y)
 }
@@ -207,8 +207,9 @@ function kata15() {
 kata15()
 
 
+
 function kata16() {
-    let y = []
+    let y = 0
     for (i = 0; i < 20; i++){
         y += sampleArray[i]
     }
